@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  #container {
+    min-height: 100vh; /* Use min-height instead of fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    gap: 0;
+    margin: 20px auto;
+    width: fit-content;
+  }
+  
+  input {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .top-border { border-top: 2px solid black; }
+  .left-border { border-left: 2px solid black; }
+  .bottom-border { border-bottom: 2px solid black; }
+  .right-border { border-right: 2px solid black; }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px 5px 0 5px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #e03e5b;
+  }
+  
+  #buttons-row {
+    margin-top: 20px;
+  }
+  
+  #switch-buttons {
+    margin-top: 15px;
+  }
+  #start-screen {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #start-screen h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ff4d6d;
+  }
+  
+  #start-screen p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  #difficulty-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #difficulty-buttons button {
+    padding: 16px 32px;
+    font-size: 18px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #difficulty-buttons button:hover {
+    background-color: #e03e5b;
+  }
+  body {
+    background: linear-gradient(to bottom right, #fff0f3, #f0f8ff);
+    
+  }
+  #start-screen p {
+    font-family: "Tahoma", sans-serif;
+  }
+  #container h2 {
+    font-size: 32px;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+  }
+  
